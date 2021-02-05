@@ -6,7 +6,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,6 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           RaisedButton(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(25.0),
+            ),
+            textColor: Colors.white,
             padding: EdgeInsets.all(15),
             color: Colors.blue[400],
             onPressed: () => _showMyDialog(context),
@@ -52,6 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
             height: 10,
           ),
           RaisedButton(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(25.0),
+            ),
+            textColor: Colors.white,
             padding: EdgeInsets.all(15),
             color: Colors.blue[400],
             onPressed: () => _showIOSDialog(context),
@@ -66,23 +73,12 @@ class _MyHomePageState extends State<MyHomePage> {
           SizedBox(
             height: 10,
           ),
-          // RaisedButton(
-          //   padding: EdgeInsets.all(15),
-          //   color: Colors.blue[400],
-          //   onPressed: () {
-          //     Scaffold.of(context).showSnackBar(
-          //         SnackBar(content: Text('You tap to open a snackbar')));
-          //   },
-          //   child: Text(
-          //     'Show Snackbar',
-          //     style: TextStyle(
-          //       fontSize: 30,
-          //       fontWeight: FontWeight.w500,
-          //     ),
-          //   ),
-          // ),
           Builder(
             builder: (context) => RaisedButton(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25.0),
+              ),
+              textColor: Colors.white,
               padding: EdgeInsets.all(15),
               color: Colors.blue[400],
               onPressed: () {
